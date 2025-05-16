@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-6 font-serif cursor-pointer">
-          <p>About</p>
+          <Link to="/about">About</Link>
           <p>Report</p>
           <p>Nearby</p>
           <p>Donate</p>
@@ -50,7 +51,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="space-y-8 font-serif text-2xl mt-32 ">
-          <li className="cursor-pointer">About</li>
+          <Link to="/about" className="cursor-pointer">About</Link>
           <li className="cursor-pointer">Report</li>
           <li className="cursor-pointer">Nearby</li>
           <li className="cursor-pointer">Donate</li>

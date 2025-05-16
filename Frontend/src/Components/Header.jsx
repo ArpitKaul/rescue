@@ -1,5 +1,5 @@
 import React from 'react';
-import { assets } from '../../assets/assets';
+import { assets } from '../assets/assets';
 
 const Header = () => {
   return (
@@ -31,7 +31,7 @@ const Header = () => {
       {/* Right Image Section */}
       <div className="md:w-1/2 flex justify-center items-center">
         <img
-          src={assets.dogy}
+          src={assets.hero}
           alt="Rescue Street Animals"
           className="w-full max-w-md rounded-lg shadow-lg"
         />
